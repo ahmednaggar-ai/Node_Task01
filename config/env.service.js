@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import path from "path";
 
 dotenv.config({
-    path: path.resolve("config/.env")
+    path: path.resolve(process.cwd(), "config/.env")
 });
 
 export const env = {
